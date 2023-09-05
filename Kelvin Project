@@ -1,0 +1,16 @@
+// We will create a variable kelvin with a constant value of 293
+const kelvin = 293;
+// We will create a variable celsius with a constant value of kelvin - 273
+const celsius = kelvin - 273;
+// We will create a variable fahrenheit with a value of (celsius * (9/5)) + 32
+let fahrenheit = (celsius * (9/5)) + 32;
+// We will round the value of fahrenheit to the nearest whole number
+fahrenheit = Math.floor(fahrenheit);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+// Convert to Newton
+let newton = celsius * (33 / 100);
+
+// Round down
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${newton} degrees Newton.`);
