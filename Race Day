@@ -1,0 +1,20 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+
+/* 
+Create a variable that indicates whether a runner registered early or not.
+Set it equal to a Boolean value. You’ll change this later as you test different runner conditions. */
+
+let  Early = true;
+/* 
+Create a variable for the runner’s age and set it equal to a number.
+You’ll change this later as you test different runner conditions. */
+
+let Age = 26;
+
+if(Age > 18 && Early){raceNumber += 1000;}
+
+if(Age > 18 && Early){console.log(`Race will begin at 9:30, your race number is: ${raceNumber}`);}
+else if(!Early && Age > 18){console.log(`Race will begin at 11:00, your race number is: ${raceNumber}`);}
+else if(Age > 18){console.log(`Race will begin at 12:30, your race number is: ${raceNumber}`);}
+else{console.log(`Please approach the registration desk, thanks!`);
+}
